@@ -1,0 +1,168 @@
+\hypertarget{classred__black__tree_1_1_red_black_tree}{}\doxysection{Red\+Black\+Tree Class Reference}
+\label{classred__black__tree_1_1_red_black_tree}\index{RedBlackTree@{RedBlackTree}}
+
+
+Красно-\/чёрное дерево бинарного поиска  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_ae64f0875afe3067b97ba370b354b9213}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\begin{DoxyCompactList}\small\item\em Инициализатор класса дерева поиска \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_a2df2374b30898cdbc08e6c4849b79f0f}{insert}} (self, key, data=None)
+\begin{DoxyCompactList}\small\item\em Функция добавления элемента в красно-\/чёрное дерево бинарного поиска \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_af89853593ad5fbefd1fe877527e5f8e6}{find\+\_\+element}} (self, ptr, key)
+\begin{DoxyCompactList}\small\item\em Функция поиска элемента в красно-\/чёрном дереве бинарного поиска \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_a0c82f0fc849ce8e7f31523a10d856797}{build\+\_\+from\+\_\+list}} (self, ticket\+\_\+list)
+\begin{DoxyCompactList}\small\item\em Функция инициализации красно-\/чёрного дерева бинарного поиска из списка данных \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_a94d8edd050543035c22fbb84296952db}{NIL}}
+\begin{DoxyCompactList}\small\item\em Инициализация начального содержимого дерева. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_ab4b8daf4b8ea9d39568719e1e320076f}{root}}
+\begin{DoxyCompactList}\small\item\em Корень дерева. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_aaa435b95d763e3184c21647f5deec95a}{\+\_\+fix\+\_\+insert}} (self, node)
+\begin{DoxyCompactList}\small\item\em Функция балансировки красно-\/чёрного дерева бинарного поиска \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_ad5110a5bbe5e3b2da2eb83c920bad38d}{\+\_\+left\+\_\+rotate}} (self, x)
+\begin{DoxyCompactList}\small\item\em Функция левого поворота красно-\/чёрного дерева бинарного поиска \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classred__black__tree_1_1_red_black_tree_a3bbec103c194f02d097e32d9c3267a45}{\+\_\+right\+\_\+rotate}} (self, y)
+\begin{DoxyCompactList}\small\item\em Функция правого поворота красно-\/чёрного дерева бинарного поиска \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Красно-\/чёрное дерево бинарного поиска 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_ae64f0875afe3067b97ba370b354b9213}\label{classred__black__tree_1_1_red_black_tree_ae64f0875afe3067b97ba370b354b9213}} 
+\index{RedBlackTree@{RedBlackTree}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Инициализатор класса дерева поиска 
+
+\begin{DoxyReturn}{Returns}
+Красно-\/чёрное дерево бинарного поиска с проинициализированным корнем. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_aaa435b95d763e3184c21647f5deec95a}\label{classred__black__tree_1_1_red_black_tree_aaa435b95d763e3184c21647f5deec95a}} 
+\index{RedBlackTree@{RedBlackTree}!\_fix\_insert@{\_fix\_insert}}
+\index{\_fix\_insert@{\_fix\_insert}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_fix\_insert()}{\_fix\_insert()}}
+{\footnotesize\ttfamily def \+\_\+fix\+\_\+insert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Функция балансировки красно-\/чёрного дерева бинарного поиска 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Главный элемент, участвующий в балансировке. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_ad5110a5bbe5e3b2da2eb83c920bad38d}\label{classred__black__tree_1_1_red_black_tree_ad5110a5bbe5e3b2da2eb83c920bad38d}} 
+\index{RedBlackTree@{RedBlackTree}!\_left\_rotate@{\_left\_rotate}}
+\index{\_left\_rotate@{\_left\_rotate}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_left\_rotate()}{\_left\_rotate()}}
+{\footnotesize\ttfamily def \+\_\+left\+\_\+rotate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Функция левого поворота красно-\/чёрного дерева бинарного поиска 
+
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_a3bbec103c194f02d097e32d9c3267a45}\label{classred__black__tree_1_1_red_black_tree_a3bbec103c194f02d097e32d9c3267a45}} 
+\index{RedBlackTree@{RedBlackTree}!\_right\_rotate@{\_right\_rotate}}
+\index{\_right\_rotate@{\_right\_rotate}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{\_right\_rotate()}{\_right\_rotate()}}
+{\footnotesize\ttfamily def \+\_\+right\+\_\+rotate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Функция правого поворота красно-\/чёрного дерева бинарного поиска 
+
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_a0c82f0fc849ce8e7f31523a10d856797}\label{classred__black__tree_1_1_red_black_tree_a0c82f0fc849ce8e7f31523a10d856797}} 
+\index{RedBlackTree@{RedBlackTree}!build\_from\_list@{build\_from\_list}}
+\index{build\_from\_list@{build\_from\_list}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{build\_from\_list()}{build\_from\_list()}}
+{\footnotesize\ttfamily def build\+\_\+from\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ticket\+\_\+list }\end{DoxyParamCaption})}
+
+
+
+Функция инициализации красно-\/чёрного дерева бинарного поиска из списка данных 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ticket\+\_\+list} & Список значений. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_af89853593ad5fbefd1fe877527e5f8e6}\label{classred__black__tree_1_1_red_black_tree_af89853593ad5fbefd1fe877527e5f8e6}} 
+\index{RedBlackTree@{RedBlackTree}!find\_element@{find\_element}}
+\index{find\_element@{find\_element}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{find\_element()}{find\_element()}}
+{\footnotesize\ttfamily def find\+\_\+element (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ptr,  }\item[{}]{key }\end{DoxyParamCaption})}
+
+
+
+Функция поиска элемента в красно-\/чёрном дереве бинарного поиска 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Ключ для поиска. \\
+\hline
+{\em ptr} & Элемент, с которого будет начат поиск. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_a2df2374b30898cdbc08e6c4849b79f0f}\label{classred__black__tree_1_1_red_black_tree_a2df2374b30898cdbc08e6c4849b79f0f}} 
+\index{RedBlackTree@{RedBlackTree}!insert@{insert}}
+\index{insert@{insert}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily def insert (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{key,  }\item[{}]{data = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+Функция добавления элемента в красно-\/чёрное дерево бинарного поиска 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Значение элемента. \\
+\hline
+{\em key} & Ключ для поиска. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_a94d8edd050543035c22fbb84296952db}\label{classred__black__tree_1_1_red_black_tree_a94d8edd050543035c22fbb84296952db}} 
+\index{RedBlackTree@{RedBlackTree}!NIL@{NIL}}
+\index{NIL@{NIL}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{NIL}{NIL}}
+{\footnotesize\ttfamily NIL}
+
+
+
+Инициализация начального содержимого дерева. 
+
+\mbox{\Hypertarget{classred__black__tree_1_1_red_black_tree_ab4b8daf4b8ea9d39568719e1e320076f}\label{classred__black__tree_1_1_red_black_tree_ab4b8daf4b8ea9d39568719e1e320076f}} 
+\index{RedBlackTree@{RedBlackTree}!root@{root}}
+\index{root@{root}!RedBlackTree@{RedBlackTree}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily root}
+
+
+
+Корень дерева. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Micro\+Star/\+Desktop/w2doxygen/\mbox{\hyperlink{red__black__tree_8py}{red\+\_\+black\+\_\+tree.\+py}}\end{DoxyCompactItemize}
